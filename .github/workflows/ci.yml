@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "58 * * * *"
+    - cron: "10 * * * *"
 
 jobs:
   autogreen:
@@ -18,7 +18,7 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v3
 
-      - name: Auto green
+      - name: auto green
         run: |
           git config --local user.email "candy@celyi.com"
           git config --local user.name "Candy5124"
